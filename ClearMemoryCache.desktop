@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=ClearMemoryCache
+Exec=/home/stas/Glade\ Projects/Clear\ Memory\ Cache/main.py
+Icon=/home/stas/Glade Projects/Clear Memory Cache/clear.svg
+Path=/home/stas/Glade Projects/Clear Memory Cache/
+Categories=Utility;Application;
+Name[en_US]=ClearMemoryCache
