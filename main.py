@@ -14,13 +14,13 @@ def runAsRoot(command):
 
 class Handler:
     def onClearPageCache(self, *args):
-        runAsRoot("gksudo sysctl vm.drop_caches=1")
+        runAsRoot("pkexec sysctl vm.drop_caches=1")
 
     def onClearDentriesAndInodes(self, button):
-        runAsRoot("gksudo sysctl vm.drop_caches=2")
+        runAsRoot("pkexec sysctl vm.drop_caches=2")
 
     def onClearAll(self, button):
-        runAsRoot("gksudo sysctl vm.drop_caches=3")
+        runAsRoot("pkexec sysctl vm.drop_caches=3")
 
 builder = Gtk.Builder()
 builder.add_from_file("main.glade")
